@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>Koło Naukowe Focus AGH</title>
+	<meta name="author" content="Piotr Lizończyk" />
+	<meta name="description" content=" " />
+	<meta name="keywords"  content=" " />
+	<meta name="Resource-type" content="Document" />
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$.fn.fullpage({
+				scrollingSpeed: 500,
+				loopBottom: true,
+				loopTop: false,
+				loopHorizontal: true,
+				slidesColor: ['#6495ED', '#9BDDFF', '#A3C1AD', '#7BAABE'],
+				anchors: ['intro', 'oNas', 'naszeProjekty', 'kontakt'],
+				menu: '#menu'
+			});
+			
+		});
+	</script>
+
+</head>
+<body>
+	
+<div class="section active" id="section0">
+	<img src="img/logo.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/agh.png" />
+	<h3>Witamy na stronie koła naukowego</h3>
+</div>
+<div class="section" id="section1">
+	<h1>O nas</h1>
+	<div class="onasbox">
+	<p>Koło Naukowe Automatyków i Robotyków <i>Focus</i> działa przy Katedrze Automatyki i Inżynierii Biomedycznej na Wydziale <a href="http://www.eaiib.agh.edu.pl" target="_blank">EAIiIB</a> AGH.</p>
+	<p>Członkami koła są studenci kierunku Automatyka i Robotyka, niemniej jednak zapraszamy wszystkich studentów AGH do naszego koła.</p>
+	<p><u>Opiekun Koła:</u> dr inż. Paweł Rotter, <a href="mailto:rotter@agh.edu.pl">rotter@agh.edu.pl</a>, <a href="http://home.agh.edu.pl/~rotter/">http://home.agh.edu.pl/~rotter</a></p>
+	<p><u>Zarząd Koła:</u></p>
+	<p>Przewodniczący: Piotr Banaszkiewicz</p>
+	<p>Zastępca przewodniczącego: Piotr Lizończyk</p>
+	<p>Webmaster: Filip Kubicz</p>
+	</div>
+</div>
+<div class="section" id="section2">
+	<div class="slide"><h1>Nasze projekty:</h1></div>
+    <div class="slide"><h1>lorem ipsum</h1><br><h4>dolor sit amet</h4></div>
+    <div class="slide"><h1>lorem ipsum</h1><br><h4>dolor sit amet</h4></div>
+    <div class="slide"><h1>lorem ipsum</h1><br><h4>dolor sit amet</h4></div>
+</div>
+<div class="section" id="section3">
+	<h1>Kontakt</h1>
+</div>
+
+
+</body>
+</html>
