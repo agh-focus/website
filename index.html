@@ -19,6 +19,7 @@
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/responsive-nav.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -32,44 +33,55 @@
 
     <!-- page header -->
       <div class="row">
+        <a id="menuToggle" href="#nav" aria-hidden="false"></a>
+
         <div class="col-md-12">
           <div class="page-header">
-            <a href="http://www.focus.agh.edu.pl/">
-              <img src="./img/logo_whitebg_small.png"
-                   alt="Focus logo" height="110" />
-            </a>
-            <a href="http://agh.edu.pl/">
-              <img src="./img/agh.jpg" class="pull-right"
-                   alt="AGH-UCI logo" width="76" />
-            </a>
+            <div class="clearfix">
+              <a href="http://www.focus.agh.edu.pl/">
+                <img src="./img/logo_whitebg_small.png"
+                     class="narrower-xs"
+                     alt="Focus logo" height="110" />
+              </a>
+              <a href="http://agh.edu.pl/">
+                <img src="./img/agh.jpg" class="pull-right hidden-xs"
+                     alt="AGH-UCI logo" width="38" />
+              </a>
+            </div>
 
-            <p class="lead">Student Scientific Association for <strong>computer vision</strong> and <strong>robotics</strong>.</p>
+            <p class="lead hidden-xs">Student Scientific Association for <strong>computer vision</strong> and <strong>robotics</strong>.</p>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-3">
-          <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="index.html">About us</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="thesis.html">Degree theses</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <div class="col-sm-3">
+          <nav class="nav-collapse" id="nav">
+            <ul class="">
+              <li class="active"><a href="index.html">About us</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="thesis.html">Degree theses</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
         </div>
 
-        <div class="col-md-9">
+        <div class="col-sm-9 maincontent">
           <p>O nas jakieś tam słowa</p>
-        </div>
-      </div>
-
-      <!-- top menu -->
-      <div class="row">
-        <div class="col-md-12">
         </div>
       </div>
 
     </div> <!-- /container -->
 
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/responsive-nav.min.js"></script>
+    <script>
+      var nav = responsiveNav(".nav-collapse", {
+        animate: true,
+        transition: 200,
+        customToggle: "#menuToggle",
+        openPos: "static"
+      });
+    </script>
   </body>
 </html>
