@@ -1,6 +1,5 @@
-a { color: #00aa00; }
-a:hover,
-a:focus { color: #107010; }
+a { color: #00A000; }
+a:hover, a:focus { color: #107010; }
 
 body { font-size: 16px; }
 
@@ -10,13 +9,16 @@ body { font-size: 16px; }
 
 /* sidebar navigation links */
 #nav { background-color: #FFF; }
-#nav a { color: #333; display: block; padding: 10px 20px;
-         border-top: 1px solid #EEE; }
+#nav a { color: #333; display: block; padding: 10px 20px; }
 #nav a small { font-weight: normal; }
+
+/* sidebar colors */
+.page-header {border-bottom: 1px solid #DDD;}
+#nav a { border-top: 1px solid #DDD; }
 #nav li:first-child a { border-top: none; }
-#nav li.active { background-color: #EEE; }
+#nav li.active { background-color: #DDD; }
 #nav li.active a { color: #444; font-weight: bold; }
-#nav li a:hover, #nav li a:focus { background-color: #009000; color: #FFF; }
+#nav li a:hover, #nav li a:focus { background-color: #208020; color: #FFF; }
 
 /* projects styles */
 .projects a[href$='.pdf'] { font-weight: bold; }
@@ -33,7 +35,7 @@ body { font-size: 16px; }
   /* styles for bigger screens (tablet, PC) */
   @media (min-width: 768px) {
     .narrower-xs { float: left !important; }
-    #nav { border-right: 1px solid #EEE; }
+    #nav { border-right: 1px solid #DDD; }
   }
 
   /* styles for smaller screens */
@@ -52,10 +54,10 @@ body { font-size: 16px; }
                   overflow: hidden; }
 
     /* slide-down navigation styles */
-    #nav { margin: 0 -15px; text-align: center; background-color: #333; }
-    #nav a { color: #DDD; display: block; padding: 10px 20px;
+    #nav { margin: 0 -15px; text-align: center; background-color: #00693C; }
+    #nav a { color: #FFF; display: block; padding: 10px 20px;
              border-bottom: 1px solid #111; border-top: none; }
-    #nav li.active { background-color: #555; }
+    #nav li.active { background-color: #309030; }
     #nav li.active a { color: #FFF; }
-    #nav li a:hover, #nav li a:focus { background-color: #444; color: #FFF; }
+    #nav li a:hover, #nav li a:focus { background-color: #005000; color: #FFF; }
   }
