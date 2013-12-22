@@ -30,10 +30,14 @@ body { font-size: 16px; }
 /* contact list styles */
 .contact dd { margin-bottom: 20px; }
 
+/* helper classes */
+.center { text-align: center; }
+
 /* responsive design styles */
 
   /* styles for bigger screens (tablet, PC) */
   @media (min-width: 768px) {
+    .maincontent h3 { text-align: center; }
     .narrower-xs { float: left !important; }
     #nav { border-right: 1px solid #DDD; }
   }
