@@ -33,11 +33,12 @@ body { font-size: 16px; }
 /* helper classes */
 .center { text-align: center; }
 
+.maincontent h3 { text-align: center; }
+
 /* responsive design styles */
 
   /* styles for bigger screens (tablet, PC) */
   @media (min-width: 768px) {
-    .maincontent h3 { text-align: center; }
     .narrower-xs { float: left !important; }
     #nav { border-right: 1px solid #DDD; }
   }
@@ -54,7 +55,7 @@ body { font-size: 16px; }
 
     #menuToggle { -moz-user-select: none; display: block; width: 60px;
                   height: 60px; float: right; text-indent: -9999px;
-                  background: url("../img/hamburger2.gif") no-repeat scroll 50% 33% rgb(68, 68, 68);
+                  background: url("../img/hamburger.gif") no-repeat scroll 50% 33% rgb(68, 68, 68);
                   overflow: hidden; }
 
     /* slide-down navigation styles */
