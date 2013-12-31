@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block meta %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AGH-UST Student Scientific Association Focus for computer vision and robotics">
+    <meta name="author" content="Student Scientific Association Focus">
+    {% endblock meta %}
+
+    <!-- Default favicons -->
+    {% block favicons %}
+    <link rel="shortcut icon" href="http://www.focus.agh.edu.pl/favicon.ico" />
+    <link rel="icon" sizes="16x16 32x32" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/favicon-144.png">
+    {% endblock %}
+
+    <title>Focus &middot; {% block pagetitle %}{{ pagetitle }}{% endblock %} &middot; AGH&ndash;UST</title>
+
+    <!-- Bootstrap core CSS -->
+    {% block cssinclude %}
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/responsive-nav.css" rel="stylesheet">
+    {% endblock %}
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+
+    <!-- page header -->
+      <div class="row">
+        <a id="menuToggle" href="#nav" aria-hidden="false"></a>
+
+        <div class="col-md-12">
+          <div class="page-header">
+            <div class="clearfix">
+              <a href="http://www.focus.agh.edu.pl/">
+                <img src="./img/logo_whitebg_small.png"
+                     class="narrower-xs"
+                     alt="Focus logo" height="110" />
+              </a>
+              <a href="http://agh.edu.pl/">
+                <img src="./img/agh.jpg" class="pull-right hidden-xs"
+                     alt="AGH-UST logo" width="60" />
+              </a>
+            </div>
+
+            <p class="lead hidden-xs">Student Scientific Association for <strong>computer vision</strong> and <strong>robotics</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <nav class="nav-collapse" id="nav">
+            <ul class="">
+              <li><a href="index.html">About us</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="theses.html">Degree theses <small>(Polish)</small></a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-sm-9 maincontent">
+          {% block maincontent %}
+            <h2>{{ pagetitle }}</h2>
+          {% endblock %}
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <script src="./js/responsive-nav.min.js"></script>
+    <script>
+      var nav = responsiveNav(".nav-collapse", {
+        animate: true,
+        transition: 200,
+        customToggle: "#menuToggle",
+        openPos: "static"
+      });
+    </script>
+  </body>
+</html>
